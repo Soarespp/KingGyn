@@ -1,0 +1,24 @@
+<!--
+  Generated template for the CamisaPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Camisa</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <ion-list>
+      <ion-item *ngFor="let produto of ListaCamiseta | async" (click)="Vender(produto.$key)">
+        <h1> </h1>
+        <h3>{{produto.descricao}}</h3>
+        <h4>Cor: {{produto.cor}} Marca: {{produto.marca}} Tamanho: {{produto.tamanho}} Qt.: {{produto.qt}}</h4>
+      </ion-item>
+    </ion-list>
+  </ion-content>

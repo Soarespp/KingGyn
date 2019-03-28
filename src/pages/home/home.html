@@ -1,0 +1,31 @@
+<ion-header style="background-color:#000000;">
+  <ion-navbar style="background-color:#000000;">
+    <ion-title >Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding style="background-color:#000000;"> 
+  <h3>Menu Inicial</h3>
+  <ion-item style="background-color:#000000;">
+    <div text-center>
+      <img width="300px" height="300px" src="../assets/imgs/Logo.png" />
+    </div>
+
+  </ion-item>
+  <ion-list style="background-color:#000000 ;">
+    <ion-item>
+      <ion-label floating>Username</ion-label>
+      <!-- <ion-input type="text" value=""></ion-input> -->
+      <ion-input type="text" #username></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Password</ion-label>
+      <!-- <ion-input type="password" value=""></ion-input> -->
+      <ion-input type="password" #password></ion-input>
+    </ion-item>
+    <ion-item>
+      <button ion-button full color="light" (click)="login()">Conectar</button>
+      <button ion-button full color="light" (click)="goToCadastros()">Cadastrar</button>
+    </ion-item>
+  </ion-list>
+</ion-content>

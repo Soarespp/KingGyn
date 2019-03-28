@@ -1,0 +1,16 @@
+<ion-header style="background-color:#000000;">
+    <button ion-button menuToggle style="background-color:#000000;">
+        <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-navbar>
+        <ion-title>Vendas</ion-title>
+    </ion-navbar>
+
+</ion-header>
+<ion-tabs style="background-color:#000000;">
+    <ion-tab [root]="camisetaRoot" tabTitle="Camiseta" tabIcon="information-circle"></ion-tab>
+    <ion-tab [root]="camisaRoot" tabTitle="Camisa" tabIcon="information-circle"></ion-tab>
+    <ion-tab [root]="bermudaRoot" tabTitle="Bermuda" tabIcon="information-circle"></ion-tab>
+    <ion-tab [root]="cuecaRoot" tabTitle="Cueca" tabIcon="information-circle"></ion-tab>
+    <ion-tab [root]="outrosRoot" tabTitle="Outros" tabIcon="information-circle"></ion-tab>
+</ion-tabs>
